@@ -1,3 +1,3 @@
 export default {
-  base: 'flesh-cards'
+  base: '/flesh-cards/'
 }
