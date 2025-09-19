@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-image: url(../img/tz4HmdvlnmgvSm9-24Xeq2Fr_fcPETFhM1f6fHsN-AmIWD-86M2WfFU_Dan4T4ybfJzjtnWKpPCAaIkXJLGMM4o7.jpg);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Playfair Display", system-ui;
+}
+
+header {
+    background-color: rgb(12, 12, 12);
+    padding: 20px 15px;
+}
+h1 {
+    text-align: center;
+    color: rgb(253, 202, 255);
+    font-size: 60px;
+}
+footer {
+    background-color: #c163ec;
+    padding: 20px 15px;
+}
+
+.card_text {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: #edc6ff;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(12, 12, 12);
+    border: 5px solid rgb(57, 0, 83);
+    /* transform: rotateY(180deg); */
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    box-shadow: blue 0 0 6px 2px;
+    transition: 0.5s transform ease-in-out;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* backface-visibility: hidden; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1200px);
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto;
+}
+
+.card::after {
+    position: relative;
+    content: "26 июня 1993 г.";
+    text-align: center;
+    color: #edc6ff;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(12, 12, 12);
+    border: 5px solid rgb(57, 0, 83);
+    border-radius: 20px;
+    box-shadow: blue 0 0 6px 2px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+}
+
+.card-show {
+    transform: rotateY(180deg);
+}
+
+.controls_text {
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.copy-text {
+  text-align: center;
+}
+
+.header2 {
+  text-align: center;
+}
